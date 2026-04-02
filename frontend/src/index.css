@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Internal Hiring Workflow — design tokens (from Figma Make theme) */
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --card: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --primary: #030213;
+  --primary-foreground: #ffffff;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --input-background: #f3f3f5;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
